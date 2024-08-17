@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+</head>
+<body>
+    <nav>
+        <span class="left" href="home.html">PROJECT</span>
+        <a href="home.html">Home</a>
+        <a href="login.html">Login</a>
+        <a href="#">About</a>
+        <a href="#">Mission</a>
+        <a href="#">Vission</a>
+        <a href="#">Setting</a>
+        
+            </nav>
+    <center><div class="form">
+        <h2>Login To Account</h2>
+        <form>
+            <label>Email</label><br>
+<input type="text" placeholder="Enter your email" required><br>
+<label>Password</label><br>
+<input type="password" id="input" placeholder="Enter your password" required>
+<div class="span"><span onclick="hide()" class="hideshow">Hide</span>
+    <span onclick="show()" class="hideshow">Show</span></div>
+<br>
+<button>Login</button>
+        </form>
+    </div></center>
+    <script>
+        function show(){
+            document.getElementById("input").type="text";
+        }
+        function hide(){
+            document.getElementById("input").type="password";
+        }
+    </script>
+</body>
+</html>
